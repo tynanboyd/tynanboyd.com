@@ -1,0 +1,75 @@
+.homepage {
+	background-image: url('../img/me-mobile.jpg');
+	@media (min-width: 640px) {
+		background-image: url('../img/me.jpg');
+	}
+	height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 350px;
+    background-color: $red;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    &__container {
+    	padding: 0 40px;
+    	margin: 0 auto;
+    	color: #fff;
+    	font-size: 24px;
+    	@media(min-width: 640px) {
+    		font-size: 36px;
+    	}
+    	@media (min-width: 1024px) {
+    		margin: 0 10%;
+    	}
+    	a {
+    		color: #fff;
+    		border-bottom: 3px solid #fff;
+    		transition: color 1s;
+    		&:hover {
+    			border-color: $red;
+    		}
+    	}
+    }
+    #project-list {
+    	display: none;
+    }
+    .social-links {
+    	a {
+    		border-bottom: none;
+    		transition: color 0.15s ease;
+    		&:hover {
+    			color: $red;
+    		}
+    	}
+    }
+    .small {
+    	font-size: 0.75em;
+    	@media (min-width:640px) {
+    		font-size: 0.5em;
+    	}
+    }
+}
+
+
+.main-logo {
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	opacity: 0.6;
+	transition: all 1s ease;
+	filter: blur(1.2px);
+	&:hover {
+		opacity: 1;
+		filter: blur(0px);
+	}
+}
+
+.site-title {
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}

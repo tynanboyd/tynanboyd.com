@@ -10,3 +10,9 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+$( document ).ready(function() {
+    $("#project-list-toggle").click(function(){
+    	$("#project-list").toggle('5');
+    });
+});
